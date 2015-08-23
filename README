@@ -1,0 +1,7 @@
+Compilation instructions:
+
+First compile the libsqlite.a library:
+gcc -o test testSQL.c sqlite3.h libsqlite.a 
+
+Compile the code:
+gcc -o test testSQL.c sqlite3.h libsqlite.a -lpthread -ldl
